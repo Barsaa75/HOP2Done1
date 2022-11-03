@@ -1,10 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Products from "./Product";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
-import Login from "./LogIn";
-import Services from "./Services";
-import App from "../App";
 
 const Header = () => {
   return (
@@ -13,16 +7,16 @@ const Header = () => {
         Home
       </Link>
       <div className="bar">
-        <Link className="page" to="./products">
+        <Link style={{ color: "black" }} className="page" to="./products">
           Products
         </Link>
-        <Link className="page" to="./services">
+        <Link style={{ color: "black" }} className="page" to="./services">
           Services
         </Link>
-        <Link className="page" to="./contact">
+        <Link style={{ color: "black" }} className="page" to="./contact">
           Contact
         </Link>
-        <Link className="page" to="./login">
+        <Link style={{ color: "black" }} className="page" to="./login">
           LogIn
         </Link>
       </div>

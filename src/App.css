@@ -1,24 +1,34 @@
-body {
-  background-image: url("./Assets/brooke-cagle-cb4Dv50LN1Y-unsplash\ 1.jpg");
-  background-size: 100%;
-}
+
 .header {
   height: 50px;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: black;
   font-size: 18px;
   line-height: 28.11px;
   font-weight: 700;
+  position: absolute;
+  z-index: 100;
 }
+
 .bar {
   width: 500px;
   display: flex;
   flex-direction: row;
   gap: 50px;
-  color: white;
+
+}
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+  background-image: url("./Assets/brooke-cagle-cb4Dv50LN1Y-unsplash\ 1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .content {
   margin-left: 100px;
