@@ -1,5 +1,10 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import { darkModeContext } from "../App";
+import { useContext } from "react";
+
 const Header = () => {
+  const { setIsDarkMode } = useContext(darkModeContext);
   const styles = {
     navbar: {
       width: "100vw",
@@ -16,6 +21,14 @@ const Header = () => {
 
   return (
     <Navbar style={styles.navbar} bg="" variant="light">
+      <Form>
+        <Form.Check
+          onChange={(e) => setIsDarkMode(e.target.checked)}
+          type="switch"
+          id="custom-switch"
+          label="dark mode"
+        />
+      </Form>
       <Container>
         <Navbar.Brand>Home</Navbar.Brand>
         <Nav className="me-auto">

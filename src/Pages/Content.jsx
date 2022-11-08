@@ -26,6 +26,7 @@ const Content = ({ title, text, placeholder, button, type }) => {
           <Col></Col>
         </Row>
         <div style={{ margin: 1000 }}></div>
+        <div>Hi llra</div>
       </Container>
     </div>
   );

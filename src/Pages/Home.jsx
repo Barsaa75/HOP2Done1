@@ -1,5 +1,4 @@
 import Content from "./Content";
-import { Col, Container } from "react-bootstrap";
 
 const Home = () => {
   return (

@@ -1,9 +1,21 @@
+import { useContext } from "react";
+import { darkModeContext } from "../App";
 import { Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Products = () => {
+  const { isDarkMode } = useContext(darkModeContext);
+
+  const body = {
+    body: {
+      height: "100vh",
+      width: "100vw",
+      backgroundColor: isDarkMode ? "gray" : "white",
+      color: isDarkMode ? "white" : "black",
+    },
+  };
   return (
-    <div>
+    <div style={body.body}>
       <div className="vlog">
         <div className="d-flex justify-content-center align-items-center flex-column">
           <Container className="w-100 ">
